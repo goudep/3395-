@@ -30,15 +30,11 @@
 
 ### 1. 第一层 (Hidden Layer)
 **线性计算**: $z^{(1)} = W^{(1)}x$
-$$
-z^{(1)} = \begin{bmatrix} 0.5 & 0.2 \\ 0.1 & 0.1 \end{bmatrix} \begin{bmatrix} 1 \\ 2 \end{bmatrix} = \begin{bmatrix} 0.5(1) + 0.2(2) \\ 0.1(1) + 0.1(2) \end{bmatrix} = \begin{bmatrix} 0.9 \\ 0.3 \end{bmatrix}
-$$
+$$z^{(1)} = \begin{bmatrix} 0.5 & 0.2 \\ 0.1 & 0.1 \end{bmatrix} \begin{bmatrix} 1 \\ 2 \end{bmatrix} = \begin{bmatrix} 0.5(1) + 0.2(2) \\ 0.1(1) + 0.1(2) \end{bmatrix} = \begin{bmatrix} 0.9 \\ 0.3 \end{bmatrix}$$
 
 **激活 (ReLU)**: $h = \max(0, z^{(1)})$
 由于 $z^{(1)}$ 均为正数，激活后数值不变：
-$$
-h = \begin{bmatrix} 0.9 \\ 0.3 \end{bmatrix}
-$$
+$$h = \begin{bmatrix} 0.9 \\ 0.3 \end{bmatrix}$$
 
 ### 2. 第二层 (Output Layer)
 **线性计算**: $z^{(2)} = W^{(2)}h$
